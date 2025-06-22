@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Classes vs. IDs: Best Practices</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <h2>Navigation</h2>
+
+        <div class="link-section">
+          <h3 class="icon-general">General</h3>
+          <ul>
+            <li>
+              <a href="/index.html">Home</a></a>
+            </li>
+            <li><a href="te-houtaewa-template.html">Te Houtaewa Template</a></li>
+            <li><a href="#">New entry coming soon</a></li>
+          </ul>
+        </div>
+
+        <div class="link-section">
+          <h3 class="icon-tech">Tech</h3>
+          <ul>
+            <li><a href="html-css.html">HTML & CSS</a></li>
+            <li><a href="#">New entry coming soon</a></li>
+            <li><a href="#">New entry coming soon</a></li>
+          </ul>
+        </div>
+
+        <div class="link-section">
+          <h3 class="icon-human">Human Skills</h3>
+          <ul>
+            <li><a href="#">New entry coming soon</a></li>
+            <li><a href="#">New entry coming soon</a></li>
+            <li><a href="#">New entry coming soon</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="content">
+        <h1>Best Practices Associated With Using Classes vs Ids</h1>
+        <h2>What Are IDs and Classes?</h2>
+        <p>Think of them as name tags:</p>
+        <ul>
+          <li><strong>ID</strong>: A unique name for one specific element.</li>
+          <li>
+            <strong>Class</strong>: A shared label you can use on multiple
+            elements.
+          </li>
+        </ul>
+
+        <h2>A Simple Example</h2>
+        <p>Here’s what it looks like in code:</p>
+
+        <pre><code>&lt;div id="header"&gt;Welcome to My Website&lt;/div&gt;
+&lt;div class="feature"&gt;Cool Feature 1&lt;/div&gt;
+&lt;div class="feature"&gt;Cool Feature 2&lt;/div&gt;
+</code></pre>
+
+        <p>And the CSS that styles it:</p>
+
+        <pre><code>#header {
+  background-color: navy;
+  color: white;
+  padding: 20px;
+}
+
+.feature {
+  background-color: lightgray;
+  padding: 10px;
+  margin-top: 10px;
+}
+</code></pre>
+
+        <p>
+          <strong>What you'd see:</strong> A navy bar that says "Welcome to My
+          Website", and two light gray boxes stacked underneath, both styled the
+          same.
+        </p>
+
+        <h2>Best Practices</h2>
+        <h3>Use <code>IDs</code> when:</h3>
+        <ul>
+          <li>You’re labeling just one specific element</li>
+          <li>
+            You need to anchor or link to it (e.g. <code>#about-us</code>)
+          </li>
+          <li>It’s unique — like a header or footer</li>
+        </ul>
+
+        <p><strong>Example:</strong></p>
+        <pre><code>&lt;div id="footer"&gt;Copyright 2025&lt;/div&gt;
+</code></pre>
+
+        <h3>Use <code>classes</code> when:</h3>
+        <ul>
+          <li>You’re styling multiple elements the same way</li>
+          <li>You want consistency across repeated elements</li>
+        </ul>
+
+        <p><strong>Example:</strong></p>
+        <pre><code>&lt;div class="card"&gt;Product 1&lt;/div&gt;
+&lt;div class="card"&gt;Product 2&lt;/div&gt;
+</code></pre>
+
+        <h2>Quick Comparison Table</h2>
+        <table
+          style="width: 100%; margin-bottom: 20px; border-collapse: collapse"
+        >
+          <thead>
+            <tr style="background-color: #2c3e50; color: white">
+              <th style="padding: 10px; border: 1px solid #ddd">Feature</th>
+              <th style="padding: 10px; border: 1px solid #ddd">ID (#)</th>
+              <th style="padding: 10px; border: 1px solid #ddd">Class (.)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding: 10px; border: 1px solid #ddd">Uniqueness</td>
+              <td style="padding: 10px; border: 1px solid #ddd">
+                Must be unique
+              </td>
+              <td style="padding: 10px; border: 1px solid #ddd">
+                Can be reused
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 10px; border: 1px solid #ddd">Use for</td>
+              <td style="padding: 10px; border: 1px solid #ddd">
+                One specific item
+              </td>
+              <td style="padding: 10px; border: 1px solid #ddd">
+                Multiple similar items
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 10px; border: 1px solid #ddd">CSS Syntax</td>
+              <td style="padding: 10px; border: 1px solid #ddd">#header {}</td>
+              <td style="padding: 10px; border: 1px solid #ddd">.feature {}</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px; border: 1px solid #ddd">
+                HTML Example
+              </td>
+              <td style="padding: 10px; border: 1px solid #ddd">id="header"</td>
+              <td style="padding: 10px; border: 1px solid #ddd">
+                class="feature"
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Final Thoughts</h2>
+        <p>
+          Using IDs and classes correctly keeps your site organized and makes
+          styling simpler. If you remember just one thing: use IDs for
+          <strong>one-of-a-kind</strong> items, and classes for
+          <strong>repeatable</strong> ones.
+        </p>
+      </main>
+    </div>
+
+    <footer class="footer">
+      &copy; 2025 Your Blog Name. All rights reserved.
+    </footer>
+  </body>
+</html>
