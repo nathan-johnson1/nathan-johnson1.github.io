@@ -108,6 +108,10 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+/* Only homepage has extra top padding */
+body.home .content {
   padding-top: 30vh;
 }
 
@@ -161,6 +165,9 @@ a {
 
   .content {
     padding: 30px 20px;
+  }
+
+  body.home .content {
     padding-top: 20vh;
   }
 
@@ -196,6 +203,10 @@ a {
 
   .content {
     padding: 20px 15px;
+  }
+
+  body.home .content {
+    padding-top: 15vh;
   }
 
   .content h1 {

@@ -8,44 +8,14 @@
 
   <body>
     <div class="container">
-      <aside class="sidebar">
-        <h2>Navigation</h2>
-
-        <div class="link-section">
-          <h3 class="icon-general">General</h3>
-          <ul>
-            <li>
-              <a href="../index.html">Home</a>
-            </li>
-            <li>
-              <a href="te-houtaewa-template.html">Te Houtaewa</a>
-            </li>
-            <li><a href="#">New entry coming soon</a></li>
-          </ul>
-        </div>
-
-        <div class="link-section">
-          <h3 class="icon-tech">Tech</h3>
-          <ul>
-            <li><a href="html-css.html">HTML & CSS</a></li>
-            <li><a href="javascript-dom.html">JavaScript DOM</a></li>
-            <li><a href="#">New entry coming soon</a></li>
-          </ul>
-        </div>
-
-        <div class="link-section">
-          <h3 class="icon-human">Human Skills</h3>
-          <ul>
-            <li>
-              <a href="identity-values.html">Identity, Values, and Strengths</a>
-            </li>
-            <li><a href="learning-plan.html">Learning Plan</a></li>
-            <li>
-              <a href="emotional-intelligence.html">Emotional Intelligence</a>
-            </li>
-          </ul>
-        </div>
-      </aside>
+      <aside id="sidebar-placeholder" class="sidebar"></aside>
+      <script>
+        fetch('sidebar.html')
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById('sidebar-placeholder').innerHTML = data
+          })
+      </script>
 
       <main class="content">
         <h1>The Story of Te Houtaewa</h1>
