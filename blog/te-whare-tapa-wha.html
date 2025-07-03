@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Te Whare Tapa Whā</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside id="sidebar-placeholder" class="sidebar"></aside>
+      <script>
+        fetch('sidebar.html')
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById('sidebar-placeholder').innerHTML = data
+          })
+      </script>
+
+      <main class="content">
+        <h1>Te Whare Tapa Whā Wellbeing Plan</h1>
+        <p>
+          This wellbeing plan is based on Tā Mason Durie’s model of Te Whare
+          Tapa Whā. It supports my holistic wellbeing while studying at Dev
+          Academy.
+        </p>
+
+        <h2>Taha Tinana (Physical Wellbeing)</h2>
+        <ul>
+          <li>Go for a walk or swim before class twice a week</li>
+        </ul>
+
+        <h2>Taha Whānau (Family Wellbeing)</h2>
+        <ul>
+          <li>Have dinner with family every evening</li>
+          <li>Call a friend or loved one once a week</li>
+        </ul>
+
+        <h2>Taha Hinengaro (Emotional and Mental Wellbeing)</h2>
+        <ul>
+          <li>Listen to a guided meditation before sleep</li>
+          <li>Journal my thoughts once a week</li>
+        </ul>
+
+        <h2>Taha Wairua (Spiritual Wellbeing)</h2>
+        <ul>
+          <li>Take 5 minutes daily to reflect and express gratitude</li>
+        </ul>
+
+        <h2>Whenua (Connection to the Land)</h2>
+        <ul>
+          <li>Walk barefoot on grass once a week</li>
+          <li>Do a nature walk every Sunday</li>
+        </ul>
+      </main>
+    </div>
+  </body>
+</html>
