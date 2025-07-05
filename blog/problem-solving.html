@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Problem Solving Reflection</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside id="sidebar-placeholder" class="sidebar"></aside>
+      <script>
+        fetch('sidebar.html')
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById('sidebar-placeholder').innerHTML = data
+          })
+      </script>
+
+      <main class="content">
+        <h1>Problem Solving Reflection</h1>
+
+        <h2>1. A time I was blocked on a simple problem</h2>
+        <p>
+          I was trying to return "FlipFlop" for numbers divisible by 3 and 5,
+          but my code was returning "Flip" instead. I used console logging, read
+          the test expectations again, and talked through my logic out loud. I
+          felt a bit stuck at first, but once I slowed down, I figured it out. I
+          learned that the order of conditions really matters when writing
+          if/else logic.
+        </p>
+
+        <h2>2. A time I elegantly solved a problem</h2>
+        <p>
+          I had to write a function to capitalize the first letter of each word
+          in a sentence. I used pseudocode to plan it, then used
+          <code>.split()</code>, <code>.map()</code>, and
+          <code>.join()</code> to write a clean one-liner. It worked first try,
+          and I felt confident and focused while writing it. I learned how
+          useful planning is — it can really speed things up.
+        </p>
+
+        <h2>3. Reflecting on my confidence with problem-solving techniques</h2>
+        <ul>
+          <li>
+            <strong>Pseudocode</strong>: Confident. Helps me plan and think
+            clearly before coding.
+          </li>
+          <li>
+            <strong>Trying something</strong>: Comfortable. Experimenting often
+            leads me toward a solution.
+          </li>
+          <li>
+            <strong>Rubber ducky method</strong>: Surprisingly effective!
+            Talking through it helps me catch mistakes.
+          </li>
+          <li>
+            <strong>Reading error messages</strong>: Getting better. Slowing
+            down and actually reading them helps a lot.
+          </li>
+          <li>
+            <strong>Console.logging</strong>: Very confident. It’s my default
+            tool for figuring out what’s going on.
+          </li>
+          <li>
+            <strong>Googling</strong>: Confident. Great for syntax and checking
+            method usage.
+          </li>
+          <li>
+            <strong>Asking peers for help</strong>: Still building confidence,
+            but I know it’s valuable when I do.
+          </li>
+          <li>
+            <strong>Asking coaches for help</strong>: Sometimes nervous, but
+            always helpful when I go for it.
+          </li>
+          <li>
+            <strong>Improving my process with reflection</strong>: Reflection
+            helps me notice patterns and improve over time.
+          </li>
+        </ul>
+        <p style="margin-top: 1em"></p>
+        <h2>4. A time I was reluctant to ask for help</h2>
+        <p>
+          I once spent about 45 minutes stuck on a test that wouldn’t pass. I
+          kept thinking I should be able to figure it out myself. Eventually, I
+          asked for help and it turned out to be a small typo. Next time, I’ll
+          give myself a 15–20 minute limit, if I’m still stuck, I’ll reach out.
+          I’m learning that asking isn’t a weakness — it speeds up the learning
+          process.
+        </p>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <p>Nathan Johnson 2025.</p>
+    </footer>
+  </body>
+</html>
